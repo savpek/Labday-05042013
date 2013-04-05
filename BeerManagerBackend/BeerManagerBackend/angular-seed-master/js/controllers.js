@@ -3,34 +3,40 @@
 /* Controllers */
 
 
-function MyCtrl1($scope) {
+function MyCtrl1($scope,baari) {
     $scope.firstName = "Pekka";
     $scope.lastName = "Savolainen";
+    $scope.login = function() {
+        baari.server.enterBar($scope.firstName, $scope.lastName);
+    };
 }
-MyCtrl1.$inject = ['$scope'];
+MyCtrl1.$inject = ['$scope',"baari"];
 
+function UserListControl($scope, baari) {
+    $scope.users = [];
 
-function MyCtrl2($scope) {
+    baari.client.refreshUserList = function (userlist) {
+        $scope.users = userlist;
+        $scope.$digest();
+    };
+}
+UserListControl.$inject = ['$scope', "baari"];
+
+function MyCtrl2($scope, baari) {
     $scope.currentMessage = "";
     
     $scope.messages = [];
     $scope.messages.push("HELLO!");
-    
-    var chat = $.connection.chat;
-    
-    chat.client.addMessage = function (message) {
+
+    baari.client.addMessage = function (message) {
         $scope.messages.push(message);
         $scope.$digest();
     };
 
     $scope.send = function() {
-        chat.server.send($scope.currentMessage);
+        baari.server.send($scope.currentMessage);
     };
 
-    $.connection.hub.start().done(function () {
-        chat.server.getUser().done(function (person) {
-            console.log(person);
-        });
-    });
+
 }
-MyCtrl2.$inject = ['$scope'];
+MyCtrl2.$inject = ['$scope',"baari"];
