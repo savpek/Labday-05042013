@@ -2,20 +2,20 @@
 
 /* Controllers */
 
-
-function MyCtrl1($scope,baari) {
+function MyCtrl1($scope, baari) {
     $scope.firstName = "Pekka";
     $scope.lastName = "Savolainen";
     $scope.login = function() {
         baari.server.enterBar($scope.firstName, $scope.lastName);
     };
 }
-MyCtrl1.$inject = ['$scope',"baari"];
+MyCtrl1.$inject = ['$scope', "baari"];
 
 function UserListControl($scope, baari) {
     $scope.users = [];
 
     baari.client.refreshUserList = function (userlist) {
+        console.log(userlist);
         $scope.users = userlist;
         $scope.$digest();
     };
@@ -33,10 +33,9 @@ function MyCtrl2($scope, baari) {
         $scope.$digest();
     };
 
-    $scope.send = function() {
-        baari.server.send($scope.currentMessage);
+    $scope.send = function () {
+        baari.server.send($scope.currentMessage, "JoRMA");
     };
 
-
 }
-MyCtrl2.$inject = ['$scope',"baari"];
+MyCtrl2.$inject = ['$scope', "baari"];

@@ -98,7 +98,6 @@
     <Content Include="angular-seed-master\lib\angular\angular.js" />
     <Content Include="angular-seed-master\lib\angular\angular.min.js" />
     <Content Include="angular-seed-master\lib\angular\version.txt" />
-    <Content Include="angular-seed-master\partials\userList.html" />
     <Content Include="angular-seed-master\partials\partial1.html" />
     <Content Include="angular-seed-master\partials\partial2.html" />
     <None Include="angular-seed-master\Scripts\jquery-1.6.4-vsdoc.js" />
