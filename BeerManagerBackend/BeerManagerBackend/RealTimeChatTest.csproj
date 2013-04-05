@@ -79,48 +79,39 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="angular-seed-master\css\app.css" />
-    <Content Include="angular-seed-master\index-async.html" />
-    <Content Include="angular-seed-master\index.html" />
-    <Content Include="angular-seed-master\js\app.js" />
-    <Content Include="angular-seed-master\js\controllers.js" />
-    <Content Include="angular-seed-master\js\directives.js" />
-    <Content Include="angular-seed-master\js\filters.js" />
-    <Content Include="angular-seed-master\js\services.js" />
-    <Content Include="angular-seed-master\lib\angular\angular-cookies.js" />
-    <Content Include="angular-seed-master\lib\angular\angular-cookies.min.js" />
-    <Content Include="angular-seed-master\lib\angular\angular-loader.js" />
-    <Content Include="angular-seed-master\lib\angular\angular-loader.min.js" />
-    <Content Include="angular-seed-master\lib\angular\angular-resource.js" />
-    <Content Include="angular-seed-master\lib\angular\angular-resource.min.js" />
-    <Content Include="angular-seed-master\lib\angular\angular-sanitize.js" />
-    <Content Include="angular-seed-master\lib\angular\angular-sanitize.min.js" />
-    <Content Include="angular-seed-master\lib\angular\angular.js" />
-    <Content Include="angular-seed-master\lib\angular\angular.min.js" />
-    <Content Include="angular-seed-master\lib\angular\version.txt" />
-    <Content Include="angular-seed-master\partials\partial1.html" />
-    <Content Include="angular-seed-master\partials\partial2.html" />
-    <None Include="angular-seed-master\Scripts\jquery-1.6.4-vsdoc.js" />
-    <Content Include="angular-seed-master\Scripts\jquery-1.6.4.js" />
-    <Content Include="angular-seed-master\Scripts\jquery-1.6.4.min.js" />
-    <Content Include="angular-seed-master\Scripts\jquery.signalR-1.0.1.js" />
-    <Content Include="angular-seed-master\Scripts\jquery.signalR-1.0.1.min.js" />
-    <Content Include="angular-seed-master\signalr.html" />
+    <Content Include="Pages\css\app.css" />
+    <Content Include="Pages\index.html" />
+    <Content Include="Pages\js\app.js" />
+    <Content Include="Pages\js\controllers.js" />
+    <Content Include="Pages\js\directives.js" />
+    <Content Include="Pages\js\filters.js" />
+    <Content Include="Pages\js\services.js" />
+    <Content Include="Pages\lib\angular\angular-cookies.js" />
+    <Content Include="Pages\lib\angular\angular-cookies.min.js" />
+    <Content Include="Pages\lib\angular\angular-loader.js" />
+    <Content Include="Pages\lib\angular\angular-loader.min.js" />
+    <Content Include="Pages\lib\angular\angular-resource.js" />
+    <Content Include="Pages\lib\angular\angular-resource.min.js" />
+    <Content Include="Pages\lib\angular\angular-sanitize.js" />
+    <Content Include="Pages\lib\angular\angular-sanitize.min.js" />
+    <Content Include="Pages\lib\angular\angular.js" />
+    <Content Include="Pages\lib\angular\angular.min.js" />
+    <Content Include="Pages\lib\angular\version.txt" />
+    <Content Include="Pages\partials\ChatPage.html" />
+    <None Include="Pages\Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Pages\Scripts\jquery-1.6.4.js" />
+    <Content Include="Pages\Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Pages\Scripts\jquery.signalR-1.0.1.js" />
+    <Content Include="Pages\Scripts\jquery.signalR-1.0.1.min.js" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <Content Include="angular-seed-master\css\.gitignore" />
-    <Content Include="angular-seed-master\img\.gitignore" />
-    <Content Include="angular-seed-master\partials\.gitignore" />
-    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.6.4.js" />
-    <Content Include="Scripts\jquery-1.6.4.min.js" />
-    <Content Include="Scripts\jquery.signalR-1.0.1.js" />
-    <Content Include="Scripts\jquery.signalR-1.0.1.min.js" />
+    <Content Include="Pages\css\.gitignore" />
+    <Content Include="Pages\img\.gitignore" />
+    <Content Include="Pages\partials\.gitignore" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bar.cs" />
-    <Compile Include="Login.cs" />
+    <Compile Include="Backend\Bar.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -147,7 +138,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>60780</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:59562/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

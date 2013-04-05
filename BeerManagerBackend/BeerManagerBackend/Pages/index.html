@@ -13,15 +13,9 @@
 </head>
 <body>
   <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
+    <li><a href="#/chat">Chat</a></li>
   </ul>
-
-    <div ng-view></div>
-    <h4>ONLINE USERS:</h4>
-    <ul ng-controller="UserListControl">
-    <li ng-repeat="user in users">{{ user.Name }}</li>
-    </ul>
+  <div ng-view class="container"></div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
   -->
